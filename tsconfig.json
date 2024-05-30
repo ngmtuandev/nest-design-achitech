@@ -1,0 +1,89 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@core/domain": [
+        "core/domain/src"
+      ],
+      "@core/domain-business-card": [
+        "core/domain-business-card/src"
+      ],
+      "@core/domain/*": [
+        "core/domain/src/*"
+      ],
+      "@core/application": [
+        "core/application/src"
+      ],
+      "@core/application-business-card": [
+        "core/application-business-card/src"
+      ],
+      "@core/application-ngword": [
+        "core/application-ngword/src"
+      ],
+      "@core/application/*": [
+        "core/application/src/*"
+      ],
+      "@infrastructure/middleware": [
+        "infrastructure/middleware/src"
+      ],
+      "@infrastructure/middleware/*": [
+        "infrastructure/middleware/src/*"
+      ],
+      "@infrastructure/repository": [
+        "infrastructure/repository/src"
+      ],
+      "@infrastructure/repository/*": [
+        "infrastructure/repository/src/*"
+      ],
+      "@infrastructure/repository-ngword": [
+        "infrastructure/repository-ngword/src"
+      ],
+      "@integration/amqp-gateway": [
+        "integration/amqp-gateway/src"
+      ],
+      "@integration/amqp-gateway/*": [
+        "integration/amqp-gateway/src/*"
+      ],
+      "@integration/socket-gateway": [
+        "integration/socket-gateway/src"
+      ],
+      "@integration/socket-gateway/*": [
+        "integration/socket-gateway/src/*"
+      ],
+      "@infrastructure/xlogger": [
+        "infrastructure/xlogger/src"
+      ],
+      "@infrastructure/xlogger/*": [
+        "infrastructure/xlogger/src/*"
+      ],
+      "@infrastructure/xhelper": [
+        "infrastructure/xhelper/src"
+      ],
+      "@infrastructure/xhelper/*": [
+        "infrastructure/xhelper/src/*"
+      ],
+      "@infrastructure/message": [
+        "infrastructure/message/src"
+      ],
+      "@infrastructure/message/*": [
+        "infrastructure/message/src/*"
+      ]
+    }
+  }
+}

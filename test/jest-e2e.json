@@ -1,0 +1,29 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@core/domain/(.*)": "<rootDir>/../core/domain/src/$1",
+    "@core/domain": "<rootDir>/../core/domain/src",
+    "@core/application/(.*)": "<rootDir>/../core/application/src/$1",
+    "@core/application": "<rootDir>/../core/application/src",
+    "@infrastructure/middleware/(.*)": "<rootDir>/../infrastructure/middleware/src/$1",
+    "@infrastructure/middleware": "<rootDir>/../infrastructure/middleware/src",
+    "@infrastructure/repository/(.*)": "<rootDir>/../infrastructure/repository/src/$1",
+    "@infrastructure/repository": "<rootDir>/../infrastructure/repository/src",
+    "@integration/amqp-gateway/(.*)": "<rootDir>/../integration/amqp-gateway/src/$1",
+    "@integration/amqp-gateway": "<rootDir>/../integration/amqp-gateway/src",
+    "@integration/socket-gateway/(.*)": "<rootDir>/../integration/socket-gateway/src/$1",
+    "@integration/socket-gateway": "<rootDir>/../integration/socket-gateway/src",
+    "@infrastructure/xlogger/(.*)": "<rootDir>/../infrastructure/xlogger/src/$1",
+    "@infrastructure/xlogger": "<rootDir>/../infrastructure/xlogger/src",
+    "@infrastructure/xhelper/(.*)": "<rootDir>/../infrastructure/xhelper/src/$1",
+    "@infrastructure/xhelper": "<rootDir>/../infrastructure/xhelper/src",
+    "@infrastructure/message/(.*)": "<rootDir>/../infrastructure/message/src/$1",
+    "@infrastructure/message": "<rootDir>/../infrastructure/message/src"
+  }
+}

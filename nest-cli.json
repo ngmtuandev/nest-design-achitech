@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "domain": {
+      "type": "library",
+      "root": "core/domain",
+      "entryFile": "index",
+      "sourceRoot": "core/domain/src",
+      "compilerOptions": {
+        "tsConfigPath": "core/domain/tsconfig.lib.json"
+      }
+    },
+    "domain-ngword": {
+      "type": "library",
+      "root": "core/domain-ngword",
+      "entryFile": "index",
+      "sourceRoot": "core/domain-ngword/src",
+      "compilerOptions": {
+        "tsConfigPath": "core/domain-ngword/tsconfig.lib.json"
+      }
+    },
+    "application": {
+      "type": "library",
+      "root": "core/application",
+      "entryFile": "index",
+      "sourceRoot": "core/application/src",
+      "compilerOptions": {
+        "tsConfigPath": "core/application/tsconfig.lib.json"
+      }
+    },
+    "middleware": {
+      "type": "library",
+      "root": "infrastructure/middleware",
+      "entryFile": "index",
+      "sourceRoot": "infrastructure/middleware/src",
+      "compilerOptions": {
+        "tsConfigPath": "infrastructure/middleware/tsconfig.lib.json"
+      }
+    },
+    "repository": {
+      "type": "library",
+      "root": "infrastructure/repository",
+      "entryFile": "index",
+      "sourceRoot": "infrastructure/repository/src",
+      "compilerOptions": {
+        "tsConfigPath": "infrastructure/repository/tsconfig.lib.json"
+      }
+    },
+    "amqp-gateway": {
+      "type": "library",
+      "root": "integration/amqp-gateway",
+      "entryFile": "index",
+      "sourceRoot": "integration/amqp-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "integration/amqp-gateway/tsconfig.lib.json"
+      }
+    },
+    "socket-gateway": {
+      "type": "library",
+      "root": "integration/socket-gateway",
+      "entryFile": "index",
+      "sourceRoot": "integration/socket-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "integration/socket-gateway/tsconfig.lib.json"
+      }
+    },
+    "xlogger": {
+      "type": "library",
+      "root": "infrastructure/xlogger",
+      "entryFile": "index",
+      "sourceRoot": "infrastructure/xlogger/src",
+      "compilerOptions": {
+        "tsConfigPath": "infrastructure/xlogger/tsconfig.lib.json"
+      }
+    },
+    "xhelper": {
+      "type": "library",
+      "root": "infrastructure/xhelper",
+      "entryFile": "index",
+      "sourceRoot": "infrastructure/xhelper/src",
+      "compilerOptions": {
+        "tsConfigPath": "infrastructure/xhelper/tsconfig.lib.json"
+      }
+    },
+    "message": {
+      "type": "library",
+      "root": "infrastructure/message",
+      "entryFile": "index",
+      "sourceRoot": "infrastructure/message/src",
+      "compilerOptions": {
+        "tsConfigPath": "infrastructure/message/tsconfig.lib.json"
+      }
+    }
+  }
+}
